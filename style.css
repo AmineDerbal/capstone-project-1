@@ -1,0 +1,187 @@
+/* Webfont: Lato-Regular */@font-face {
+  font-family: 'LatoWeb';
+  src: url('./assets/fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+       url('./assets/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+       url('./assets/fonts/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Medium */@font-face {
+  font-family: 'LatoWebMedium';
+  src: url('fonts/Lato-Medium.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Lato-Medium.woff2') format('woff2'), /* Modern Browsers */
+       url('fonts/Lato-Medium.woff') format('woff'), /* Modern Browsers */
+       url('fonts/Lato-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+:root{
+  --dark-background : #272a31;
+  --light-background : #d3d3d3;
+  --orange-color : #ec5242
+  
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+a{
+  text-decoration: none;
+}
+.page-media , .header-navigator {
+  display: none;
+}
+
+
+#hamburger-button{
+  display: inline-block;
+  cursor: pointer;
+  padding: 1rem;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+#headline{
+  width: 100%;
+  background-image: url('./assets/images/cool-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.introduction {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.introduction .title {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+.introduction .heading-title {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.introduction .title,.introduction .description,.introduction .heading-title ,.introduction .deadline ,.introduction .location {
+  font-family: 'LatoWebMedium',sans-serif;
+}
+.introduction .title,.introduction .heading-title {
+  color: var(--orange-color);
+}
+.introduction .description{
+  padding: .5rem;
+  line-height: 1.6rem;
+ border: 5px solid #fff;
+  color: #262930;
+  background-color: var(--light-background);
+}
+.introduction .deadline {
+  color: var(--dark-background);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.introduction .location{
+  color: var(--dark-background);
+  font-size: 1.3rem;
+  
+}
+#program {
+  width: 100%;
+  background-color: var(--dark-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.program-title {
+  font-family: 'LatoWeb',sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .page-media{
+    display: block;
+    background-color: var(--dark-background);
+    padding-right: 15%;
+  }
+  .page-media ul , #navigator ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    padding: .5rem;
+    margin-top: 0;
+   
+    
+  }
+  .page-media ul {
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+ 
+
+  .page-media a {
+    color: #fff;
+    font-family: 'LatoWeb',sans-serif;
+    font-size: .8rem;
+  }
+  #navigator ul{
+   gap:3rem
+  }
+
+  #navigator a {
+    color: var(--dark-background);
+    font-family:'LatoWeb',sans-serif; ;
+    font-size: 1.2rem;
+  }
+
+  .header-navigator{
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #hamburger-button{
+    display: none;
+  }
+  .introduction{
+    padding-left: 10%;
+  }
+  .introduction .heading-title {
+    width: 60%;
+    font-size: 3.5rem;
+    line-height: 3.2rem;
+  }
+  .introduction .description{
+    width: 50%;
+  }
+}
