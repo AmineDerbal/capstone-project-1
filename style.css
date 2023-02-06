@@ -73,6 +73,7 @@ a{
   background-image: url('./assets/images/cool-background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 5rem;
 }
 .introduction {
   width: 85%;
@@ -116,15 +117,88 @@ a{
 #program {
   width: 100%;
   background-color: var(--dark-background);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-bottom: 2rem;
+  
 }
 .program-title {
+  margin-top: 4rem;
   font-family: 'LatoWeb',sans-serif;
   color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: .5rem;
+}
+.program-separator {
+  margin: 0 auto;
+  height: .1rem;
+  width: 5%;
+  border-bottom: 2px solid var(--orange-color);
+  margin-bottom: 2rem;
+}
+.image-container{
+  width: 30%;
+ 
+}
+.image-container img {
+  width: 50%;
+  padding-left: 1rem;
+  object-fit: cover;
+}
+.course {
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #3C3F46;
+  margin: .5rem;
+  border-radius: 5px;  
+} 
+.course-title {
+  font-family: 'LatoWeb',sans-serif;
+  color: var(--orange-color);
   font-size: 1.5rem;
+  width: 30%;
+}
+.course-description {
+  font-family: 'LatoWeb',sans-serif;
+  color: #fff;
+  width: 60%;
+}
+#join-program {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+#join-button {
+  font-family: 'LatoWebMedium',sans-serif;
   padding: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: var(--orange-color);
+  border: none;
+}
+#join-button:hover {
+  background-color: #fff;
+  color: var(--orange-color);
+  transform: scale(1.1);
+}
+
+.featured-mentors-title {
+  margin-top: 4rem;
+  font-family: 'LatoWeb',sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: .5rem;
+}
+.featured-mentors-separator{
+  margin: 0 auto;
+  height: .1rem;
+  width: 10%;
+  border-bottom: 2px solid var(--orange-color);
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 768px) {
