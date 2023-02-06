@@ -35,11 +35,16 @@ body{
   box-sizing: border-box;
   scroll-behavior: smooth;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 a{
   text-decoration: none;
+}
+ul{
+  list-style: none;
 }
 .page-media , .header-navigator {
   display: none;
@@ -67,12 +72,12 @@ a{
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
-#headline{
+.headline{
   width: 100%;
   background-image: url('./assets/images/cool-background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 .introduction {
   width: 85%;
@@ -114,6 +119,7 @@ a{
   
 }
 #program {
+  padding-top: 1rem;
   width: 100%;
   background-color: var(--dark-background);
   padding-bottom: 2rem;
@@ -205,27 +211,29 @@ a{
 }
 .mentor-card {
   padding: 0 1rem;
-  display: flex;
-  gap: 2rem;
+  
 }
 .mentor-card .image-container {
-width: 60%;
+float: left;
+width: 200px;
+margin: .5rem;
+
 }
 .mentor-card .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+ 
 }
 .mentor-name{
   font-family: 'LatoWebMedium',sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .mentor-title {
   color: var(--orange-color);
   font-family: 'LatoWebMedium',sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .mentor-separator {
   height: .1rem;
@@ -236,7 +244,7 @@ width: 60%;
 }
 .mentor-description {
   font-family: 'LatoWebMedium',sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .mentors-container {
   display: grid;
@@ -246,23 +254,19 @@ width: 60%;
 #sponsor {
   background-color: var(--dark-background);
   padding-bottom: 2rem;
+  padding-top: .5rem;
 }
-.sponsor-list {
-  padding-left: 0;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  list-style: none;
-  text-align: center;
-  justify-content: space-between;
-  grid-row-gap: 2rem;
-}
+  
 .sponsor-list a{
   font-family: 'LatoWebMedium',sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #B3B3B2;
 }
-.logo-4{
-  grid-column: span 2;
+.sponsor-row {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 footer {
@@ -276,7 +280,7 @@ footer a {
 }
 footer img {
 width: 100%;
-object-fit: fill;
+
 }
 .footer-description {
   font-family: 'LatoWebMedium',sans-serif;
@@ -284,7 +288,135 @@ object-fit: fill;
   width: 50%;
   font-size: .8rem;
 }
+#about .title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#about .description {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid var(--light-background);
+}
+#about .heading-title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
+
+#about .contact {
+  font-family: 'LatoWeb',sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.contact a {
+  text-decoration: underline;
+  color: var(--dark-background);
+  font-weight: bold;
+}
+
+.about-logo {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--light-background);
+}
+
+.about-logo p {
+  color: var(--dark-background);
+  font-family: 'LatoWebMedium',sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
+}
+.logo-separator {
+  height: 0.1rem;
+  width: 10%;
+  border-bottom: 2px solid var(--orange-color);
+  margin-bottom: 1rem;
+}
+.logo-image {
+ width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:1px solid var(--light-background)
+}
+.logo-image img {
+  width: 100%;
+  max-width: 300px;
+ }
+ .past-courses {
+  margin-bottom: 4rem;
+ }
+
+ .past-title {
+  color: var(--dark-background);
+  font-family: 'LatoWebMedium',sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+ }
+ .past-separator {
+  height: 0.1rem;
+  width: 10%;
+  border-bottom: 2px solid var(--orange-color);
+  margin: 0 auto;
+ }
+ .past-description {
+  text-align: center;
+  font-family: 'LatoWeb',sans-serif;
+  color: var(--dark-background);
+  font-weight: 400;
+  size: 1.2rem;
+  width: 70%;
+  margin-right: auto ;
+  margin-left: auto ;
+ }
+ .course-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+ }
+ .year {
+  background-image: url('./assets/images/web-course.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  width: 100%;
+ }
+ .year div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240 80 50 / 75%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  gap: 0.2rem;
+  align-items: center;
+ padding: 5rem 0 5rem 0;
+ }
+ .year p , .year h3 {
+  margin: 0;
+  color: #fff;
+ }
+ .year h3 {
+  font-family:'LatoWebMedium',sans-serif; ;
+  font-size: 2rem;
+ }
+ .year p {
+  font-family:'LatoWebMedium',sans-serif;
+  font: 1.5rem;
+ }
 
 @media screen and (min-width: 768px) {
   .page-media{
@@ -294,12 +426,9 @@ object-fit: fill;
   }
   .page-media ul , #navigator ul {
     align-items: center;
-    list-style: none;
     display: flex;
     padding: .5rem;
-    margin-top: 0;
-   
-    
+    margin-top: 0;  
   }
   .page-media ul {
     justify-content: flex-end;
