@@ -34,7 +34,6 @@ body{
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -136,14 +135,14 @@ a{
   border-bottom: 2px solid var(--orange-color);
   margin-bottom: 2rem;
 }
-.image-container{
+.course .image-container{
   width: 30%;
  
 }
-.image-container img {
+.course .image-container img {
   width: 50%;
   padding-left: 1rem;
-  object-fit: cover;
+  object-fit: fill;
 }
 .course {
   padding: .5rem;
@@ -185,6 +184,10 @@ a{
   transform: scale(1.1);
 }
 
+#featured-mentors {
+  margin-bottom: 2rem;
+}
+
 .featured-mentors-title {
   margin-top: 4rem;
   font-family: 'LatoWeb',sans-serif;
@@ -200,6 +203,88 @@ a{
   border-bottom: 2px solid var(--orange-color);
   margin-bottom: 2rem;
 }
+.mentor-card {
+  padding: 0 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.mentor-card .image-container {
+width: 60%;
+}
+.mentor-card .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.mentor-name{
+  font-family: 'LatoWebMedium',sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.mentor-title {
+  color: var(--orange-color);
+  font-family: 'LatoWebMedium',sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.mentor-separator {
+  height: .1rem;
+  padding-left: .5rem;
+  border-radius: 5px;
+  width: 5%;
+  border-bottom: 5px solid var(--light-background);
+}
+.mentor-description {
+  font-family: 'LatoWebMedium',sans-serif;
+  font-size: 1.2rem;
+}
+.mentors-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap : 3rem
+}
+#sponsor {
+  background-color: var(--dark-background);
+  padding-bottom: 2rem;
+}
+.sponsor-list {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  list-style: none;
+  text-align: center;
+  justify-content: space-between;
+  grid-row-gap: 2rem;
+}
+.sponsor-list a{
+  font-family: 'LatoWebMedium',sans-serif;
+  font-size: 2.5rem;
+  color: #B3B3B2;
+}
+.logo-4{
+  grid-column: span 2;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a {
+  width: 30%;
+}
+footer img {
+width: 100%;
+object-fit: fill;
+}
+.footer-description {
+  font-family: 'LatoWebMedium',sans-serif;
+  font-weight: 600;
+  width: 50%;
+  font-size: .8rem;
+}
+
 
 @media screen and (min-width: 768px) {
   .page-media{
