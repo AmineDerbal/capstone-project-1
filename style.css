@@ -26,15 +26,12 @@
   text-rendering: optimizeLegibility;
 }
 
-@font-face {
-  font-family: "CocogooseProUltralight-trial";
-  src: url('./');
-}
-
 :root {
   --dark-background: #272a31;
   --light-background: #d3d3d3;
   --orange-color: #ec5242;
+  --lato-medium: 'LatoWebMedium', sans-serif;
+  --lato: 'LatoWeb', sans-serif;
 }
 
 body {
@@ -77,13 +74,14 @@ footer img {
 }
 
 .sponsor-list a {
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato);
   font-size: 1.5rem;
   font-weight: 600;
   color: #b3b3b2;
 }
 
 .contact a {
+  font-family: var(--lato);
   text-decoration: underline;
   color: var(--dark-background);
   font-weight: bold;
@@ -217,11 +215,9 @@ footer img {
 }
 
 .introduction .title,
-.introduction .description,
 .introduction .heading-title,
-.introduction .deadline,
-.introduction .location {
-  font-family: 'LatoWebMedium', sans-serif;
+.introduction .deadline {
+  font-family: var(--lato-medium);
 }
 
 .introduction .title,
@@ -230,6 +226,7 @@ footer img {
 }
 
 .introduction .description {
+  font-family: var(--lato);
   padding: 0.5rem;
   line-height: 1.6rem;
   border: 5px solid #fff;
@@ -249,6 +246,7 @@ footer img {
 }
 
 .introduction .location {
+  font-family: var(--lato);
   color: var(--dark-background);
   font-size: 1.3rem;
 }
@@ -264,7 +262,7 @@ footer img {
 
 .program-title {
   margin-top: 4rem;
-  font-family: 'LatoWeb', sans-serif;
+  font-family: var(--lato-medium);
   color: #fff;
   font-size: 2rem;
   margin-bottom: 0;
@@ -310,14 +308,14 @@ footer img {
 }
 
 .course-title {
-  font-family: 'LatoWeb', sans-serif;
+  font-family: var(--lato-medium);
   color: var(--orange-color);
   font-size: 1.5rem;
   width: 30%;
 }
 
 .course-description {
-  font-family: 'LatoWeb', sans-serif;
+  font-family: var(--lato);
   color: #fff;
   width: 60%;
 }
@@ -330,7 +328,7 @@ footer img {
 }
 
 #join-button {
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato-medium);
   padding: 1.5rem;
   font-size: 1.5rem;
   color: #fff;
@@ -354,7 +352,7 @@ footer img {
 
 .featured-mentors-title {
   margin-top: 4rem;
-  font-family: 'LatoWeb', sans-serif;
+  font-family: var(--lato-medium);
   font-size: 2rem;
   margin-bottom: 0;
   text-align: center;
@@ -389,7 +387,7 @@ footer img {
 }
 
 .mentor-name {
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato-medium);
   font-weight: 600;
   font-size: 1.3rem;
   padding-top: 0.5rem;
@@ -398,7 +396,7 @@ footer img {
 
 .mentor-title {
   color: var(--orange-color);
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato-medium);
   font-weight: 600;
   font-size: 1.1rem;
   margin: 0;
@@ -414,7 +412,7 @@ footer img {
 }
 
 .mentor-description {
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato);
   font-size: 1rem;
 }
 
@@ -445,7 +443,7 @@ footer {
 }
 
 .footer-description {
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato);
   font-weight: 600;
   width: 50%;
   font-size: 0.8rem;
@@ -472,7 +470,7 @@ footer {
 }
 
 #about .contact {
-  font-family: 'LatoWeb', sans-serif;
+  font-family: var(--lato);
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: center;
@@ -491,7 +489,7 @@ footer {
 
 .logo-title {
   color: var(--dark-background);
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato-medium);
   font-weight: 700;
   font-size: 1.5rem;
   width: 50%;
@@ -507,7 +505,7 @@ footer {
 
 .logo-description {
   color: var(--dark-background);
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato);
   width: 80%;
   text-align: center;
 }
@@ -526,7 +524,7 @@ footer {
 
 .past-title {
   color: var(--dark-background);
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato-medium);
   font-weight: 600;
   font-size: 1.5rem;
   text-align: center;
@@ -541,7 +539,7 @@ footer {
 
 .past-description {
   text-align: center;
-  font-family: 'LatoWeb', sans-serif;
+  font-family: var(--lato);
   color: var(--dark-background);
   font-weight: 400;
   font-size: 1.2rem;
@@ -591,12 +589,12 @@ footer {
 }
 
 .year h3 {
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato-medium);
   font-size: 2rem;
 }
 
 .year p {
-  font-family: 'LatoWebMedium', sans-serif;
+  font-family: var(--lato);
   font-size: 1.5rem;
 }
 
@@ -613,7 +611,7 @@ footer {
 
   .page-media a {
     color: #fff;
-    font-family: 'LatoWeb', sans-serif;
+    font-family: var(--lato);
     font-size: 0.8rem;
   }
 
@@ -640,7 +638,7 @@ footer {
 
   #navigator a {
     color: var(--dark-background);
-    font-family: 'LatoWeb', sans-serif;
+    font-family: var(--lato);
     font-size: 1.2rem;
   }
 
@@ -733,7 +731,7 @@ footer {
   }
 
   #join-link {
-    font-family: 'LatoWebMedium', sans-serif;
+    font-family: var(--lato-medium);
     display: block;
     color: #fff;
     text-decoration: underline;
