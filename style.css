@@ -596,6 +596,8 @@ footer {
 .year p {
   font-family: var(--lato);
   font-size: 1.5rem;
+  width: 90%;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
