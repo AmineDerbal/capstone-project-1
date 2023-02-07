@@ -768,8 +768,18 @@ footer {
   }
 
   footer {
-
     justify-content: center;
+  }
+
+  .inverse-footer {
+    background-color: var(--dark-background);
+  }
+  .inverse-footer img{
+    content: url('./assets/images/logo-about.png');
+  }
+
+  .inverse-footer .footer-description {
+    color: #fff;
   }
 
   .course-gallery {
